@@ -1,0 +1,196 @@
+body {
+  margin: 0px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  background-color: aquamarine;
+  padding-left: 25px;
+
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 50%;
+}
+
+li {
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgb(127, 219, 255);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+li a {
+  text-decoration: none;
+  font-size: larger;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.naslov {
+  width: 45%;
+  height: 30%;
+  font-size: 46px;
+  font-weight: 700;
+  float: left;
+  margin: 2%;
+}
+
+h2 span {
+  color: aquamarine;
+}
+
+.popularnosada {
+  width: 45%;
+  height: 30%;
+  font-size: large;
+  font-weight: 300;
+  float: right;
+  margin: 2%;
+}
+
+.slika {
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%;
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1%;
+  transition: 0.3s;
+}
+
+.slika1 {
+  background-image: url(slike/slika1.jpg);
+}
+
+.slika2 {
+  background-image: url(slike/slika2.jfif);
+}
+
+.slika3 {
+  background-image: url(slike/slika3.jpg);
+}
+
+.slika:hover {
+  transform: translateX(3px) translateY(-3px);
+}
+
+.toplista {
+  width: 100%;
+  margin: 3% auto;
+  text-align: center;
+}
+
+.tekst {
+  width: 80%;
+}
+
+.tekst p {
+  font-size: large;
+  width: 50%;
+  text-align: left;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.tekst p:hover {
+  transform: translateX(10px);
+  color: crimson;
+}
+
+@media screen and (max-width: 720px) {
+  nav {
+    display: block;
+  }
+
+  li {
+    display: block;
+    width: 80%;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .naslov,
+  .popularnosada {
+    width: 90%;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 10%;
+  background-color: rgb(127, 219, 255);
+  text-align: center;
+  padding: 30px;
+  margin-top: auto;
+}
+
+form {
+  margin: 50px auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+#pretraga {
+  flex-direction: row;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.success-message {
+  margin: 50px auto;
+  max-width: 600px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}

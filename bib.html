@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekstovi</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+
+<body onload="proveriGodine()">
+    <nav id="navbar">
+        <h1>Tekstovi.rs</h1>
+
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="button-group">
+            <button onclick="menjajTemu('tamna')">Tamna tema</button>
+            <button onclick="menjajTemu('svetla')">Svetla tema</button>
+        </div>
+        <form onsubmit="return pretraziPesme();">
+            <label for="pesma">Unesite ime pesme:</label>
+            <div id="pretraga">
+                <input type="text" id="pesma" name="pesma" required>
+                <button type="submit">Pretraži</button>
+            </div>
+        </form>
+    </nav>
+
+    <div class="tekst">
+        <div class="slika slika3" onclick="link('bib')"></div>
+        <h1>Beast in Black - Dark New World </h1>
+        <div>
+            <p>Steel empire and arenas of violence
+                Cries of help left to die in the silence
+                Evil ones claim the throne, total carnage rages uncaged
+                Morbid freaks run the show and I'm bound to engage
+                With God damn</p>
+            <p>Sodom and Gomorrah, revolting vermin legions everywhere
+                Rotten superegos praise this dark new world
+                Sightless to the monster because your mirror's black forevermore
+                Never stop the madness in this dark new world</p>
+            <p>You impregnate fragile minds in a frenzy of perpetual rape
+                Breeding filth that you force everyone to accept and tolerate
+                I detest, I resist, and I spit on your crimes, you subhuman whores
+                Boiling with blood and bile, I'm declaring a war
+                On your</p>
+            <p>Sodom and Gomorrah, revolting vermin legions everywhere
+                Rotten superegos praise this dark new world
+                Sightless to the monster because your mirror's black forevermore
+                Never stop the madness in this dark new world</p>
+        </div>
+    </div>
+    <script src="skript.js"></script>
+</body>
+
+</html>

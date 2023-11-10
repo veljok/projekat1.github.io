@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekstovi</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <h1>Tekstovi.rs</h1>
+
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="button-group">
+            <button onclick="menjajTemu('tamna')">Tamna tema</button>
+            <button onclick="menjajTemu('svetla')">Svetla tema</button>
+        </div>
+        <form onsubmit="return pretraziPesme();">
+            <label for="pesma">Unesite ime pesme:</label>
+            <div id="pretraga">
+                <input type="text" id="pesma" name="pesma" required>
+                <button type="submit">Pretraži</button>
+            </div>
+        </form>
+    </nav>
+
+    <form id="kontaktForma" onsubmit="return posaljiPodatke(event)">
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="poruka">Poruka:</label>
+        <textarea id="poruka" name="poruka" required></textarea>
+
+        <input type="submit" value="Pošalji">
+    </form>
+    <div class="uspesna-poruka" id="uspesnaPoruka"></div>
+
+    <footer>
+        <form id="email-form">
+            <label for="email-input">Učlanite se na našu mailing listu</label>
+            <input type="email" id="email-input" required>
+            <button type="submit">Potvrdi</button>
+        </form>
+    </footer>
+
+    <script src="skript.js"></script>
+</body>
+
+</html>

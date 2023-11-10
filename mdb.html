@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekstovi</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <h1>Tekstovi.rs</h1>
+
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="button-group">
+            <button onclick="menjajTemu('tamna')">Tamna tema</button>
+            <button onclick="menjajTemu('svetla')">Svetla tema</button>
+        </div>
+        <form onsubmit="return pretraziPesme();">
+            <label for="pesma">Unesite ime pesme:</label>
+            <div id="pretraga">
+                <input type="text" id="pesma" name="pesma" required>
+                <button type="submit">Pretraži</button>
+            </div>
+        </form>
+    </nav>
+
+    <div class="tekst">
+
+        <div class="slika slika1" onclick="link('mdb')"></div>
+
+        <h1> Moscow Death Brigade - Boltcutter</h1>
+        <div>
+            <p>Boltcutter, boltcutter, we're from the same gutter
+                We came to bring the pain - out to gut them
+                Cut metal like butter, skeleton key in my backpack
+                Boltcutter goes Click-Clack (x2)</p>
+            <p>Goes Click-Clack
+                Goes Click-Clack
+                Goes Click-Clack
+                Boltcutter Click-Clack</p>
+            <p>Keep calm, please, back down, shed no tear
+                I've got the keys from your city right here
+                I've got the keys from you train lay up right here
+                Strike in the night and then we disappear
+                Like a buccaneer I bring the fear to your shore
+                We gonna rip and tear like you've never seen before
+                Oh, ready for battle to settle the score
+                We want more, just like Dora we explore</p>
+            <p>We're the true players we bring the crew with us
+                Looters, solicitors, bottom feeders
+                Never ever looking back - no rest for the sinners
+                Ski mask, urban Olympics - we're the winners
+                Who beat up your Nazis? Who steal your jobs?
+                Who paint your trains, who pump up your clubs
+                Run from your cops, make them really heavy bass-drops
+                Get all the props, who's that? That's us!</p>
+        </div>
+    </div>
+
+    <script src="skript.js"></script>
+</body>
+
+</html>
