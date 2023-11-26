@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: https://veljok.github.io/projekat1.github.io/sitemap.xml
